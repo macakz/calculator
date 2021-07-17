@@ -1,54 +1,65 @@
+/* container */
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5em;
-    color: white;
-    }
-    /* calculator */
-    .calculator {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 5em;
+color: white;
+}
 
-    }
-    .calculator_display {
-        background-color: #1C1C1C;
-        width: 9em;
-        text-align: right;
-        padding: .4em;
-        font-size: 2em;
-    }
-    /* button section */
-    .calculator_keys {
-    display: grid;
-    grid-template-columns: repeat(4,auto);
-    height: 15em;
-    margin: 0px;  
-    background-color: #1C1C1C; 
-    }
-    .ac, .plusMinus, .percent {
-    background-color: #D4D4D2;
-    border-radius: 50%;
-    border-color: #1C1C1C; 
-    color: #1C1C1C
-    } 
+/* calculator */
 
-    
-    .divide, .multiply, .minus, .plus, .equals{
-        background-color: #FF9500;
-        border-radius: 50%;
-        border-color: #1C1C1C; 
-        color: white
-    }
-    .zero {
-        grid-column: auto / span 2;
-        background-color: #505050;
-        border-color: #1C1C1C; 
-        border-radius: 20%;
-        color: white
-    }
-    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
-        background-color: #505050;
-        border-radius: 50%;
-        border-color: #1C1C1C;
-        color: white;
-    }
+.calculator {
+background-color: #1C1C1C;
+padding: 1.5em;
+border-radius: 10%;
+
+}
+
+/* display */
+
+.calculator_display {
+background-color: #1C1C1C;
+width: 9em;
+text-align: right;
+padding: .4em;
+font-size: 2em;
+}
+
+/* buttons */
+
+.calculator_keys {
+display: grid;
+grid-template-columns: repeat(4,auto);
+height: 15em;
+margin: 0px;  
+background-color: #1C1C1C; 
+}
+.ac, .plusMinus, .percent {
+background-color: #D4D4D2;
+border-radius: 50%;
+border-color: #1C1C1C; 
+color: #1C1C1C
+} 
+
+
+.divide, .multiply, .minus, .plus, .equals{
+background-color: #FF9500;
+border-radius: 50%;
+border-color: #1C1C1C; 
+color: white
+}
+.zero {
+grid-column: auto / span 2;
+background-color: #505050;
+border-color: #1C1C1C; 
+border-radius: 20%;
+color: white
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
+background-color: #505050;
+border-radius: 50%;
+border-color: #1C1C1C;
+color: white;
+}

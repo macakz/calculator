@@ -2,8 +2,8 @@
 function Header () {
     return (
         <>
-            <div>
-                <h1>Calculator built with React</h1>
+            <div className="headerContainer">
+                <h1>The Reactive Calculator</h1>
 
             </div>
         </>

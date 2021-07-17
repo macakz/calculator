@@ -15,3 +15,8 @@
 .contentWrap {
   flex: 1;
 }
+
+.headerContainer {
+  border-bottom: 5px solid black;
+
+}

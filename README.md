@@ -1,1 +1,1 @@
-Recreating the IPhone Calculator
+Recreating the iPhone Calculator

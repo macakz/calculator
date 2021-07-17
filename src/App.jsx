@@ -1,12 +1,17 @@
 import './App.css';
+
 import Footer from './Footer'
+import Header from './Header'
+import Calculator from './Calculator'
+
 
 function App () {
   return (
     <>
       <div className="pageContainer">
         <div className="contentWrap">
-          <h1>helloworld</h1>
+          <Header />
+          <Calculator />
         </div>
         <Footer />
       </div>

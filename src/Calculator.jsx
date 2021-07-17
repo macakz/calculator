@@ -5,10 +5,10 @@ import './Calculator.css'
 
 
 function Calculator () {
-    const [currentDisplay, setCurrentDisplay] = useState(0);
+    const [currentDisplay, setCurrentDisplay] = useState(" ");
 
     const handleReset = () => {
-        setCurrentDisplay(0)
+        setCurrentDisplay(" ")
     }
     const calculate = () => {
         const result = evaluate(currentDisplay);
@@ -27,29 +27,35 @@ function Calculator () {
 
     return (
         <>
-            <div class="container">
-                <div class="calculator">
-                    <div class="calculator_display">{currentDisplay}</div>
-                    <div class="calculator_keys">
-                        <button onClick={handleReset} name="AC" class="ac">AC</button>
-                        <button onClick={handleButton} name="±" data-type="operator" class="plusMinus">&#xb1;</button>
-                        <button onClick={handleButton} name="%" data-type="operator" class="percent">&#x25;</button>
-                        <button onClick={handleButton} name="/" data-type="operator" class="divide">&#xf7;</button>
-                        <button onClick={handleButton} name="7" data-type="number" class="seven">7</button>
-                        <button onClick={handleButton} name="8" data-type="number" class="eight">8</button>
-                        <button onClick={handleButton} name="9" data-type="number" class="nine">9</button>
-                        <button onClick={handleButton} name="*" data-type="operator" class="multiply">&#xd7;</button>
-                        <button onClick={handleButton} name="4" data-type="number" class="four">4</button>
-                        <button onClick={handleButton} name="5" data-type="number" class="five">5</button>
-                        <button onClick={handleButton} name="6" data-type="number" class="six">6</button>
-                        <button onClick={handleButton} name="-" data-type="operator" class="minus">&#x2212;</button>
-                        <button onClick={handleButton} name="1" data-type="number" class="one">1</button>
-                        <button onClick={handleButton} name="2" data-type="number" class="two">2</button>
-                        <button onClick={handleButton} name="3" data-type="number" class="three">3</button>
-                        <button onClick={handleButton} name="+" data-type="operator" class="plus">&#x2b;</button>
-                        <button onClick={handleButton} name="0" data-type="number" class="zero">0</button>
-                        <button onClick={handleButton} name="." data-type="operator" class="decimal">.</button>
-                        <button onClick={handleButton} name="=" data-type="operator" class="equals">&#x3d;</button>
+            <div className="container">
+                <div className="calculator">
+                    <div className="calculator_display">
+                        {
+                            currentDisplay === " "
+                                ? <div>0</div>
+                                : <div>{currentDisplay}</div>
+                        }
+                    </div>
+                    <div className="calculator_keys">
+                        <button onClick={handleReset} name="AC" className="ac">AC</button>
+                        <button onClick={handleButton} name="-" data-type="operator" className="plusMinus">&#xb1;</button>
+                        <button onClick={handleButton} name="%" data-type="operator" className="percent">&#x25;</button>
+                        <button onClick={handleButton} name="/" data-type="operator" className="divide">&#xf7;</button>
+                        <button onClick={handleButton} name="7" data-type="number" className="seven">7</button>
+                        <button onClick={handleButton} name="8" data-type="number" className="eight">8</button>
+                        <button onClick={handleButton} name="9" data-type="number" className="nine">9</button>
+                        <button onClick={handleButton} name="*" data-type="operator" className="multiply">&#xd7;</button>
+                        <button onClick={handleButton} name="4" data-type="number" className="four">4</button>
+                        <button onClick={handleButton} name="5" data-type="number" className="five">5</button>
+                        <button onClick={handleButton} name="6" data-type="number" className="six">6</button>
+                        <button onClick={handleButton} name="-" data-type="operator" className="minus">&#x2212;</button>
+                        <button onClick={handleButton} name="1" data-type="number" className="one">1</button>
+                        <button onClick={handleButton} name="2" data-type="number" className="two">2</button>
+                        <button onClick={handleButton} name="3" data-type="number" className="three">3</button>
+                        <button onClick={handleButton} name="+" data-type="operator" className="plus">&#x2b;</button>
+                        <button onClick={handleButton} name="0" data-type="number" className="zero">0</button>
+                        <button onClick={handleButton} name="." data-type="operator" className="decimal">.</button>
+                        <button onClick={handleButton} name="=" data-type="operator" className="equals">&#x3d;</button>
                     </div>
                 </div>
             </div>

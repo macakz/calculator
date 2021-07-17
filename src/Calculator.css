@@ -4,7 +4,7 @@
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 5em;
+padding: 10em;
 color: white;
 }
 
@@ -13,8 +13,7 @@ color: white;
 .calculator {
 background-color: #1C1C1C;
 padding: 1.5em;
-border-radius: 10%;
-
+border-radius: 5%;
 }
 
 /* display */
@@ -24,7 +23,7 @@ background-color: #1C1C1C;
 width: 9em;
 text-align: right;
 padding: .4em;
-font-size: 2em;
+font-size: 1.5em;
 }
 
 /* buttons */
@@ -62,8 +61,9 @@ font-size: 2em;
     grid-column: auto / span 2;
     background-color: #505050;
     border-color: #1C1C1C; 
-    border-radius: 20%;
-    color: white
+    border-radius: 50%;
+    color: white;
+    text-align: left;
 }
 
 .zero:hover {

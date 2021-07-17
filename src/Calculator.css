@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    }
+    /* calculator */
+    .calculator_display {
+        background-color: rgb(211, 205, 205);
+        width: 10em;
+        text-align: right;
+        padding: .4em;
+        font-size: 2em;
+    }
+    
+    /* button section */
+    .calculator_keys {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    height: 15em;
+    margin: 0px;  
+    background-color: #1C1C1C; 
+    }
+    .ac {
+    background-color: #D4D4D2;
+    } 
+    .plusMinus {
+        background-color: #D4D4D2;
+    }
+    .percent {
+        background-color: #D4D4D2;
+    }
+    .divide {
+        background-color: #FF9500
+    }
+    .multiply {
+        background-color: #FF9500
+    }
+    .minus {
+        background-color: #FF9500
+    }
+    .plus {
+    background-color: #FF9500
+    }
+    .equals {
+    background-color: #FF9500
+    }
+    .zero {
+        grid-column: auto / span 2;
+    }
+    .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
+        background-color: #505050;
+    }

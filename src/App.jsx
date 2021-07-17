@@ -1,10 +1,17 @@
 import './App.css';
+import Footer from './Footer'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <h1> helloworld </h1>
-    </div>
+    <>
+      <div className="pageContainer">
+        <div className="contentWrap">
+          <h1>helloworld</h1>
+        </div>
+        <Footer />
+      </div>
+    </>
+
   );
 }
 

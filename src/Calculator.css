@@ -1,18 +1,22 @@
+
 .container {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
+    padding: 5em;
+    color: white;
     }
     /* calculator */
+    .calculator {
+
+    }
     .calculator_display {
-        background-color: rgb(211, 205, 205);
-        width: 10em;
+        background-color: #1C1C1C;
+        width: 9em;
         text-align: right;
         padding: .4em;
         font-size: 2em;
     }
-    
     /* button section */
     .calculator_keys {
     display: grid;
@@ -21,33 +25,30 @@
     margin: 0px;  
     background-color: #1C1C1C; 
     }
-    .ac {
+    .ac, .plusMinus, .percent {
     background-color: #D4D4D2;
+    border-radius: 50%;
+    border-color: #1C1C1C; 
+    color: #1C1C1C
     } 
-    .plusMinus {
-        background-color: #D4D4D2;
-    }
-    .percent {
-        background-color: #D4D4D2;
-    }
-    .divide {
-        background-color: #FF9500
-    }
-    .multiply {
-        background-color: #FF9500
-    }
-    .minus {
-        background-color: #FF9500
-    }
-    .plus {
-    background-color: #FF9500
-    }
-    .equals {
-    background-color: #FF9500
+
+    
+    .divide, .multiply, .minus, .plus, .equals{
+        background-color: #FF9500;
+        border-radius: 50%;
+        border-color: #1C1C1C; 
+        color: white
     }
     .zero {
         grid-column: auto / span 2;
-    }
-    .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
         background-color: #505050;
+        border-color: #1C1C1C; 
+        border-radius: 20%;
+        color: white
+    }
+    .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
+        background-color: #505050;
+        border-radius: 50%;
+        border-color: #1C1C1C;
+        color: white;
     }

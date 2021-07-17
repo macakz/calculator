@@ -20,6 +20,9 @@ function Calculator () {
             case '=':
                 calculate();
                 break;
+            case '%':
+                setCurrentDisplay(currentDisplay/100)
+                break
             default:
                 setCurrentDisplay(currentDisplay + value);
         }
@@ -38,7 +41,7 @@ function Calculator () {
                     </div>
                     <div className="calculator_keys">
                         <button onClick={handleReset} name="AC" className="ac">AC</button>
-                        <button onClick={handleButton} name="-" data-type="operator" className="plusMinus">&#xb1;</button>
+                        <button onClick={handleButton} name="±" data-type="operator" className="plusMinus">&#xb1;</button>
                         <button onClick={handleButton} name="%" data-type="operator" className="percent">&#x25;</button>
                         <button onClick={handleButton} name="/" data-type="operator" className="divide">&#xf7;</button>
                         <button onClick={handleButton} name="7" data-type="number" className="seven">7</button>

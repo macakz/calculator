@@ -30,36 +30,52 @@ font-size: 2em;
 /* buttons */
 
 .calculator_keys {
-display: grid;
-grid-template-columns: repeat(4,auto);
-height: 15em;
-margin: 0px;  
-background-color: #1C1C1C; 
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    height: 15em;
+    margin: 0px;  
+    background-color: #1C1C1C; 
 }
+
 .ac, .plusMinus, .percent {
-background-color: #D4D4D2;
-border-radius: 50%;
-border-color: #1C1C1C; 
-color: #1C1C1C
+    background-color: #D4D4D2;
+    border-radius: 50%;
+    border-color: #1C1C1C; 
+    color: #1C1C1C
 } 
 
+.ac:hover, .plusMinus:hover, .percent:hover {
+    opacity: 70%;
+} 
 
-.divide, .multiply, .minus, .plus, .equals{
-background-color: #FF9500;
-border-radius: 50%;
-border-color: #1C1C1C; 
-color: white
+.divide, .multiply, .minus, .plus, .equals {
+    background-color: #FF9500;
+    border-radius: 50%;
+    border-color: #1C1C1C; 
+    color: white
 }
+.divide:hover, .multiply:hover, .minus:hover, .plus:hover, .equals:hover {
+    opacity: 70%;
+    }
+
 .zero {
-grid-column: auto / span 2;
-background-color: #505050;
-border-color: #1C1C1C; 
-border-radius: 20%;
-color: white
+    grid-column: auto / span 2;
+    background-color: #505050;
+    border-color: #1C1C1C; 
+    border-radius: 20%;
+    color: white
+}
+
+.zero:hover {
+    opacity: 70%;
 }
 .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .decimal {
-background-color: #505050;
-border-radius: 50%;
-border-color: #1C1C1C;
-color: white;
+    background-color: #505050;
+    border-radius: 50%;
+    border-color: #1C1C1C;
+    color: white;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .decimal:hover {
+    opacity: 70%;
 }

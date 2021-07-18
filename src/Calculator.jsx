@@ -14,12 +14,12 @@ function Calculator () {
         const result = evaluate(currentDisplay)
         setCurrentDisplay(result)
     }
-    const handleNegative = () => {
+    const handlePositiveNegative = () => {
         if (currentDisplay.includes('-')) {
             setCurrentDisplay(currentDisplay.split("-").pop())
         } else setCurrentDisplay('-' + currentDisplay)
     }
-    
+
     const handleButton = (e) => {
         const value = e.target.getAttribute('name')
         switch (value) {
@@ -30,7 +30,7 @@ function Calculator () {
                 setCurrentDisplay(currentDisplay / 100)
                 break
             case '±':
-                handleNegative()
+                handlePositiveNegative()
                 break
             default:
                 setCurrentDisplay(currentDisplay + value);

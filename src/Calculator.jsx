@@ -11,17 +11,26 @@ function Calculator () {
         setCurrentDisplay(" ")
     }
     const calculate = () => {
-        const result = evaluate(currentDisplay);
-        setCurrentDisplay(result);
+        const result = evaluate(currentDisplay)
+        setCurrentDisplay(result)
     }
+    const handleNegative = () => {
+        if (currentDisplay.includes('-')) {
+            setCurrentDisplay(currentDisplay.split("-").pop())
+        } else setCurrentDisplay('-' + currentDisplay)
+    }
+    
     const handleButton = (e) => {
-        const value = e.target.getAttribute('name');
+        const value = e.target.getAttribute('name')
         switch (value) {
             case '=':
                 calculate();
                 break;
             case '%':
-                setCurrentDisplay(currentDisplay/100)
+                setCurrentDisplay(currentDisplay / 100)
+                break
+            case '±':
+                handleNegative()
                 break
             default:
                 setCurrentDisplay(currentDisplay + value);

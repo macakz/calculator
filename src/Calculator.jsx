@@ -10,10 +10,12 @@ function Calculator () {
     const handleReset = () => {
         setCurrentDisplay(" ")
     }
+    
     const calculate = () => {
         const result = evaluate(currentDisplay)
         setCurrentDisplay(result)
     }
+
     const handlePositiveNegative = () => {
         if (currentDisplay.includes('-')) {
             setCurrentDisplay(currentDisplay.split("-").pop())

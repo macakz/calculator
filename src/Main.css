@@ -6,6 +6,16 @@
   background-color: white;
 }
 
+.footerContainer a{
+  text-decoration: none;
+  color: rgb(223, 119, 255);
+
+}
+.footerContainer a:hover{
+  color: rgb(195, 0, 255);
+  text-decoration: underline;
+}
+
 .pageContainer {
   display: flex;
   flex-direction: column;

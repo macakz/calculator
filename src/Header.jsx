@@ -1,3 +1,4 @@
+import './Main.css'
 
 function Header () {
     return (

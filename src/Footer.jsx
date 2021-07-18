@@ -1,4 +1,4 @@
-import './App.css'
+import './Main.css'
 function Footer () {
     return (
         <div class="footerContainer">
